@@ -1,10 +1,9 @@
-import {Svg, Marker, Point, off} from '@svgdotjs/svg.js'
+import {Svg, Marker, Point} from "@svgdotjs/svg.js"
 import {gPoint} from "./figures/gPoint";
 import {gCircle} from "./figures/gCircle";
 import {gSegment} from "./figures/gSegment";
 import {gGrid} from "./grid";
 import {texLabel} from "./texLabel";
-import {makeLogger} from "ts-loader/dist/logger";
 
 export class GeometryDraw {
     private _draw: Svg;

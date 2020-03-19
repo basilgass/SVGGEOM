@@ -1,8 +1,7 @@
-import {Circle, Line, Marker} from "@svgdotjs/svg.js";
+import {Marker} from "@svgdotjs/svg.js";
 import {GeometryDraw} from "../geometryDraw";
 import {gPoint} from "./gPoint";
 import {gFigure} from "./gFigure";
-import {texLabel} from "../texLabel";
 
 export class gSegment extends gFigure{
     /**

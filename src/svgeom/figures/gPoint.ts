@@ -1,5 +1,4 @@
 import {GeometryDraw} from "../geometryDraw";
-import {Circle, Path, Shape} from "@svgdotjs/svg.js";
 import {gFigure} from "./gFigure";
 
 export class gPoint extends gFigure{

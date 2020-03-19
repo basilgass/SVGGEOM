@@ -1,8 +1,6 @@
-import {Circle, Shape} from "@svgdotjs/svg.js";
 import {GeometryDraw} from "../geometryDraw";
 import {gPoint} from "./gPoint";
 import {gFigure} from "./gFigure";
-import {texLabel} from "../texLabel";
 
 export class gCircle extends gFigure{
     private _center: gPoint;

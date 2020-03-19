@@ -1,7 +1,6 @@
 import {GeometryDraw} from "../geometryDraw";
-import {off, Shape} from "@svgdotjs/svg.js";
+import {Shape} from "@svgdotjs/svg.js";
 import {texLabel} from "../texLabel";
-import {gPoint} from "./gPoint";
 
 export class gFigure {
     private _gdraw: GeometryDraw;

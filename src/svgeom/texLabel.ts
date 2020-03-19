@@ -1,5 +1,3 @@
-import {gPoint} from "./figures/gPoint";
-
 export class texLabel {
     private _pos:{x:number, y:number};
     private _label:string;
