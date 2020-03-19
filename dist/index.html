@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <title>Getting Started</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.0.13/svg.min.js"></script>
+
+    <link rel="stylesheet" href="../node_modules/katex/dist/katex.min.css">
+    <script src="../node_modules/katex/dist/katex.min.js"></script>
+
+    <script src="geompi.js"></script>
+</head>
+<body>
+
+<div id="svgOutput"></div>
+
+<script>
+    var draw = SVG().addTo('#svgOutput').size(800, 600);
+
+    let geom = new GeomPi(draw);
+    geom.xAxis = {x:50, y:0};
+    geom.yAxis = {x:0, y:50};
+    geom.origin = {x:2, y:1};
+    geom.showGrid().showAxis().showOrigin();
+
+    let V = geom.addVector(geom.addPoint(1,1), geom.addPoint(4,7));
+    V.showLabel(katex.renderToString('\\vec{a}'));
+
+    let C1 = geom.addCircle(geom.addPoint(3, 4), 3);
+    C1.svg.fill('none').stroke('black');
+    C1.showCenter();
+    C1.label = 'C';
+    C1.showLabel('l');
+    C1.moveCenter(1, 2);
+    C1.radius = 2;
+    let S = geom.addSegment(geom.addPoint(5,3, 'A'), geom.addPoint(-1,1, 'B'));
+    S.showExtremities();
+    //S.label = 'segment';
+    S.showLabel();
+    S.showExtremitiesLabels('br');
+
+    //console.log(geom.constructionList);
+</script>
+</body>
+</html>
